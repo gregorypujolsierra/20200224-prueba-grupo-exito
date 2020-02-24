@@ -1,0 +1,48 @@
+.artist-container {
+    position: relative;
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.artist-name {
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.link-to-artist {
+    z-index: 2;
+}
+
+.artist-name, .link-to-artist {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.artist-name > p {
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 80%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.artist-name:hover {
+    background-color: transparent;
+}
+
+.artist-img-max-h {
+    max-height: 100%;
+}
+
+.artist-img-max-w {
+    max-width: 100%;
+}

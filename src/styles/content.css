@@ -1,0 +1,11 @@
+.content {
+    flex-grow: 1;
+    font-weight: bold;
+    font-family: "DejaVu Sans Condensed";
+    color: #fafafa;
+}
+
+.footer {
+    height: 100px;
+    background-color: #303030;
+}

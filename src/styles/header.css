@@ -1,0 +1,18 @@
+.header {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+}
+
+.appName {
+    margin-left: 20px;
+    font-size: 120%;
+}
+
+.link {
+    margin-right: 30px;
+    font-size: 90%;
+}

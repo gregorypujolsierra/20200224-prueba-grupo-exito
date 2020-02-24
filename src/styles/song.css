@@ -1,0 +1,11 @@
+.song-listed-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.song-listed-duration {
+    margin-right: 10px;
+}

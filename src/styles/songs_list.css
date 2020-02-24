@@ -1,0 +1,43 @@
+.song-list-main {
+    padding: 30px 40px 40px 40px;
+    background-color: #000000;
+}
+
+.song-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.song-item-container {
+    position: relative;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-color: #909090;
+}
+
+.song-item-container:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.song-numbered-item {
+    margin-left: 10px;
+    margin-right: 35px;
+    font-weight: normal;
+    color: #909090;
+}
+
+.link-to-song {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

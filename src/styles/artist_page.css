@@ -1,0 +1,43 @@
+.artist-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-header {
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: -webkit-linear-gradient(#303030, #000000);
+    background: -moz-linear-gradient(#303030, #000000);
+    background: -o-linear-gradient(#303030, #000000);
+    background: linear-gradient(#303030, #000000);
+}
+
+#artist-image-header {
+    margin: 25px 0 40px 0;
+}
+
+.artist-name-popularity {
+    display: flex;
+    flex-direction: row;
+}
+
+#artist-name-header {
+    font-size: 200%;
+}
+
+#artist-popularity-header {
+    font-size: 90%;
+}
+
+#popularity-star-icon {
+    font-size: 100%;
+    color: yellow;
+}
+
+.album-list-container {
+    width: 66%;
+}

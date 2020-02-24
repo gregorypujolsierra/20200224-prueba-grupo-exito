@@ -1,0 +1,55 @@
+.album-listed-container, .album-info-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.album-info-group {
+    flex-grow: 1;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-color: #909090;
+}
+
+.album-listed-container:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.album-image-container {
+    position: relative;
+    margin: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.album-info-container {
+    flex-grow: 1;
+}
+
+.album-info-name {
+    font-weight: normal;
+}
+
+.album-play-button {
+    margin: 15px;
+}
+
+.album-img-max-h {
+    max-height: 100%;
+}
+
+.album-img-max-w {
+    max-width: 100%;
+}
+
+.link-to-album {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
