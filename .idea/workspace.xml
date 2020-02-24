@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a932a459-c140-4d63-887f-4918ffdc29ae" name="Default Changelist" comment="" />
+    <list default="true" id="a932a459-c140-4d63-887f-4918ffdc29ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prueba-react-grupo-exito.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prueba-react-grupo-exito.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/albums/SongsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/SongsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/songs/PlaySong.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songs/Player.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +29,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Y2iHFQZwtg93DxjlkMeKzqKnUr" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,10 +91,28 @@
       <workItem from="1582385481739" duration="2457000" />
       <workItem from="1582400183337" duration="38647000" />
       <workItem from="1582478043407" duration="33749000" />
+      <workItem from="1582514803818" duration="77000" />
+      <workItem from="1582514893543" duration="8000" />
+      <workItem from="1582514997041" duration="170000" />
+      <workItem from="1582515194344" duration="8370000" />
+      <workItem from="1582523569690" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

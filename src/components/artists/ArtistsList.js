@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 
 import '../../styles/artists_list.css';
+import '../../styles/content.css';
 import Artist from "./Artist";
+import Header from "../common/Header";
 
 
 export default class ArtistsList extends Component {
@@ -28,10 +30,14 @@ export default class ArtistsList extends Component {
     render() {
         const {artists} = this.state;
         return (
-            <div className={"artists-container"}>
-                {artists.map(artist =>
-                    artist.id && artist.name? <Artist key={artist.id} artist={artist}/> : <div/>
-                )}
+            <div className={'content'}>
+                <Header/>
+                <div className={"artists-container"}>
+                    {artists.map(artist =>
+                        artist.id && artist.name? <Artist key={artist.id} artist={artist}/> : <div/>
+                    )}
+                </div>
+                <div className={'footer'}/>
             </div>
         )
     }
