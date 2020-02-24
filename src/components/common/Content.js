@@ -14,20 +14,18 @@ export default class Content extends Component {
                 <Header/>
                 {/*<ArtistsList/>*/}
 
-                <ArtistPage  // TODO: pass an artist object //
-                    artist_name={'Nirvana'}
-                    artist_id={'3'}
-                    artist_popularity={'81.0'}
-                />
+                {/*<ArtistPage  // TODO: pass an artist object //*/}
+                {/*    artist_name={'Nirvana'}*/}
+                {/*    artist_id={'3'}*/}
+                {/*    artist_popularity={'81.0'}*/}
+                {/*/>*/}
 
-{/*
                 <AlbumPage  // TODO: pass an album object //
-                    album_id={'20'}
-                    album_name={'Do I Wanna Know?'}
-                    album_image={'https://i.scdn.co/image/ab67616d0000b2737ba54b0fa3fe1c986a318446'}
-                    album_total_tracks={'2'}
+                    album_id={'94'}
+                    album_name={'Back In Black'}
+                    album_image={'https://i.scdn.co/image/ab67616d0000b273e02589301e7f4b222312bed0'}
+                    album_total_tracks={'10'}
                 />
-*/}
 
                 <div className={'footer'}/>
             </div>

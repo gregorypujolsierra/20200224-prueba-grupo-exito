@@ -12,6 +12,7 @@ export default class SongsList extends Component {
             songs: [],
             album_duration: 0,
             suggested_songs: [],
+            playing_now: false,
         };
 
         this.getSongs = this.getSongs.bind(this);
@@ -44,8 +45,8 @@ export default class SongsList extends Component {
         let {suggested_songs} = this.state;
         let random_album, random_song;
         times(count, () => {
-            random_album = sample(data);  // TODO: What if I get an empty album?
-            random_song = sample(random_album['songs']);  // TODO: What if I get an empty song?
+            random_album = sample(data);  // TODO: What if I get an empty album? For while?
+            random_song = sample(random_album['songs']);  // TODO: What if I get an empty song? For while?
             suggested_songs.push(random_song)
         });
         this.setState(suggested_songs)

@@ -1,0 +1,56 @@
+.player-main-frame {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #1d1d1d;
+    justify-content: space-between;
+}
+
+.player-controls-main-frame {
+    height: 54px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.player-other-controls {
+    width: 250px;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.player-other-controls > i {
+    font-size: 180%;
+}
+
+.player-main-frame, .player-controls-info-group, .player-controls-main-frame,.player-album-info, .player-other-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-control-button {
+    background-color: transparent;
+    border-style: none;
+    padding: 0 26px;
+}
+
+#prev-song-button {
+    font-size: 200%;
+    color: #616161;
+}
+
+#next-song-button {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+.player-album-image-container {
+    height: 54px;
+    width: 54px;
+    margin-left: 40px;
+    margin-right: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}

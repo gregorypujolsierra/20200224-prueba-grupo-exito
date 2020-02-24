@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a932a459-c140-4d63-887f-4918ffdc29ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prueba-react-grupo-exito.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prueba-react-grupo-exito.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/albums/Song.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/Song.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/albums/SongsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/SongsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/songs/PlaySong.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songs/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/songs/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songs/Player.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +89,7 @@
       <workItem from="1582514997041" duration="170000" />
       <workItem from="1582515194344" duration="8370000" />
       <workItem from="1582523569690" duration="24000" />
+      <workItem from="1582523597287" duration="10221000" />
     </task>
     <servers />
   </component>
