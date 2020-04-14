@@ -11,7 +11,7 @@
     padding-top: 30px;
 }
 
-.song-item-container {
+.song-item {
     position: relative;
     width: 98%;
     display: flex;
@@ -23,8 +23,16 @@
     border-color: #909090;
 }
 
-.song-item-container:hover {
+.song-available {
+    cursor: pointer;
+}
+
+.song-available:hover {
     background-color: rgba(255, 255, 255, .3);
+}
+
+.song-unavailable {
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .song-numbered-item {

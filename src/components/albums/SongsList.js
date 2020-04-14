@@ -10,9 +10,7 @@ export default class SongsList extends Component {
 
         this.state = {
             songs: [],
-            album_duration: 0,
             suggested_songs: [],
-            playing_now: false,
         };
 
         this.getSongs = this.getSongs.bind(this);
@@ -23,33 +21,45 @@ export default class SongsList extends Component {
     }
 
     getSongs() {
-        const album_id = this.props.album_id;
-        fetch('https://i8rmpiaad2.execute-api.us-east-1.amazonaws.com/dev/api/albums/0/songs')
+        const album_id = this.props.album.id;
+        fetch('https://i8rmpiaad2.execute-api.us-east-1.amazonaws.com/dev/api/songs')
             .then(response => response.json())
             .then(data => {
-                let album = find(data, ['album', Number(album_id)]);
-                this.setState({songs: album['songs']});
-                this.getRandomSongs(data, 4);
+                try {
+                    let album = find(data, ['album', Number(album_id)]);
+                    this.setState({songs: album['songs']});
+                    this.getRandomSongs(data, 4);
+                    this.getAlbumDuration();
+                } catch (e) {
+                    console.log(e)
+                }
             })
     }
 
-    getAlbumDuration() {  // TODO
-        let {songs, album_duration} = this.state;
-        {songs.map(song => {
+    getAlbumDuration() {
+        let songs, album_duration;
+        songs = this.state.songs;
+        album_duration = 0;
+        songs.map(song => {
             album_duration += Number(song.duration_ms)
-        })}
-        this.setState(album_duration)
+        });
+        this.props.sendAlbumDuration(album_duration);
     }
 
     getRandomSongs(data, count) {
         let {suggested_songs} = this.state;
+        let available_albums = this.props.selected_artist['albums'];
         let random_album, random_song;
         times(count, () => {
-            random_album = sample(data);  // TODO: What if I get an empty album? For while?
+            random_album = find(data, ['album', sample(available_albums)['id']]);  // TODO: What if I get an empty album? For while?
             random_song = sample(random_album['songs']);  // TODO: What if I get an empty song? For while?
             suggested_songs.push(random_song)
         });
         this.setState(suggested_songs)
+    }
+
+    selectSongToPlay(song) {
+        this.props.sendSongFromList(song);
     }
 
     render() {
@@ -58,21 +68,39 @@ export default class SongsList extends Component {
             <div className={'song-list-main'}>
                 <h2>Canciones</h2>
                 <div className={'song-list-container'}>
-                    {songs.map((song, index) =>
-                        <div className={'song-item-container'}>
-                            <p className={'song-numbered-item'}>{index + 1}</p>
-                            <Song key={song.id} song={song}/>
-                            <a href={"#Song"} className={'link-to-song'}/>
-                        </div>
-                    )}
+                    {songs.length !== 0 ?
+                        songs.map((song, index) =>
+                            <div className={'song-item'}>
+                                <p className={'song-numbered-item'}>{index + 1}</p>
+                                <Song key={song.id} song={song}/>
+                                {song.preview_url ?
+                                    <div
+                                        className={'link-to-song song-available'}
+                                        onClick={() => this.selectSongToPlay(song)}
+                                    />
+                                    :
+                                    <div className={'link-to-song song-unavailable'}/>
+                                }
+                            </div>
+                        )
+                        :
+                        <h1>No se obtuvo información</h1>
+                    }
                 </div>
                 <h2>Sugerencias</h2>
                 <div className={'song-list-container'}>
                     {suggested_songs.map((song, index) =>
-                        <div className={'song-item-container'}>
+                        <div className={'song-item'}>
                             <p className={'song-numbered-item'}>{index + 1}</p>
                             <Song key={song.id} song={song}/>
-                            <a href={"#Song"} className={'link-to-song'}/>
+                            {song.preview_url ?
+                                <div
+                                    className={'link-to-song song-available'}
+                                    onClick={() => this.selectSongToPlay(song)}
+                                />
+                                :
+                                <div className={'link-to-song song-unavailable'}/>
+                            }
                         </div>
                     )}
                 </div>

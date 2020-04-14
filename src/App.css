@@ -2,4 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #303030;
+  font-family: "DejaVu Sans Condensed";
+  font-weight: bold;
+  color: #fafafa;
+}
+
+Link, a {
+  color: #fafafa;
+  text-decoration: none;
 }

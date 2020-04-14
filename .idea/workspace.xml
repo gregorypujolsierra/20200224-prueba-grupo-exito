@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a932a459-c140-4d63-887f-4918ffdc29ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/common/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test-react-grupo-exito.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-music-player-web-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/AlbumPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/albums/Song.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/Song.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/albums/SongsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/albums/SongsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/Album.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/Album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/AlbumsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/AlbumsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/Artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/Artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/ArtistHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/ArtistHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/ArtistPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/ArtistPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artists/ArtistsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/songs/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songs/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libraries/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/libraries/utilities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/album_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/album_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/artist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/artist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/songs_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/songs_list.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +61,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,11 +71,11 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/components/albums" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components/artists" />
-      <recent name="$PROJECT_DIR$/src/components/common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +114,30 @@
       <workItem from="1582514997041" duration="170000" />
       <workItem from="1582515194344" duration="8370000" />
       <workItem from="1582523569690" duration="24000" />
-      <workItem from="1582523597287" duration="10221000" />
+      <workItem from="1582523597287" duration="10714000" />
+      <workItem from="1582546030152" duration="9502000" />
+      <workItem from="1582564733729" duration="8136000" />
+      <workItem from="1582650158056" duration="777000" />
+      <workItem from="1582728013690" duration="7289000" />
+      <workItem from="1582847797998" duration="17572000" />
+      <workItem from="1582892720154" duration="599000" />
+      <workItem from="1583033021631" duration="2173000" />
+      <workItem from="1583292281997" duration="1398000" />
+      <workItem from="1583366900883" duration="599000" />
+      <workItem from="1583376630069" duration="1439000" />
+      <workItem from="1583417985145" duration="9000" />
+      <workItem from="1583418211357" duration="94000" />
+      <workItem from="1583418307595" duration="264000" />
+      <workItem from="1583418591799" duration="5026000" />
+      <workItem from="1583518569196" duration="2366000" />
+      <workItem from="1583548662144" duration="2526000" />
+      <workItem from="1583611508811" duration="3455000" />
+      <workItem from="1583699211166" duration="8401000" />
+      <workItem from="1586828315813" duration="289000" />
+      <workItem from="1586828747553" duration="57000" />
+      <workItem from="1586828881349" duration="77000" />
+      <workItem from="1586828993841" duration="144000" />
+      <workItem from="1586829161119" duration="23941000" />
     </task>
     <servers />
   </component>

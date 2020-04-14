@@ -1,13 +1,10 @@
 import React, {Component} from "react";
+import { Link } from "react-router-dom";
 
 import '../../styles/album.css';
 import FitImage from "../../libraries/FitImage";
 
 export default class Album extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className={'album-listed-container'}>
@@ -27,7 +24,7 @@ export default class Album extends Component {
                         <i id={'album-play-icon'} className="material-icons">play_arrow</i>
                     </div>
                 </div>
-                <a href={"#album"} className={'link-to-album'}/>
+                <Link to={`/albums/${this.props.album.id}/songs`} className={'link-to-album'}/>
             </div>
         )
     }

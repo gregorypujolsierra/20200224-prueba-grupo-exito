@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
 import '../../styles/artists_list.css';
-import '../../styles/content.css';
+import '../../styles/main.css';
 import Artist from "./Artist";
 import Header from "../common/Header";
 
@@ -24,7 +24,10 @@ export default class ArtistsList extends Component {
     getArtists() {
         fetch('https://i8rmpiaad2.execute-api.us-east-1.amazonaws.com/dev/api/artists')
             .then(response => response.json())
-            .then(artists => this.setState({artists}))
+            .then(artists => {
+                this.setState({artists});
+                localStorage.setItem('artists', JSON.stringify(artists))
+            })
     }
 
     render() {
@@ -34,10 +37,10 @@ export default class ArtistsList extends Component {
                 <Header/>
                 <div className={"artists-container"}>
                     {artists.map(artist =>
-                        artist.id && artist.name? <Artist key={artist.id} artist={artist}/> : <div/>
+                        artist.id && artist.name? <Artist key={artist.id} artist={artist}/> : null
                     )}
                 </div>
-                <div className={'footer'}/>
+                {/*<div className={'footer'}/>*/}
             </div>
         )
     }

@@ -1,13 +1,17 @@
 export function formatDuration(duration_ms) {
-    let duration, min, sec;
-    duration = Number(duration_ms);
-    min = Math.floor(duration / (60 * 1000));
-    sec = (Math.floor(duration % (60 * 1000) / 1000));
+    let duration, h, min, sec;
+    duration = Number(duration_ms) / 1000;
+    h = Math.floor(duration / 3600);
+    min = Math.floor(duration % 3600 / 60);
+    sec = (Math.floor(duration % 60 ));
     if (min < 10) {
         min = '0' + min;
     }
     if (sec < 10) {
         sec = '0' + sec;
     }
-    return min + ':' + sec
+    if (h < 1) {
+        return min + ':' + sec;
+    }
+    return h + ':' + min + ':' + sec
 }

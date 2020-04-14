@@ -4,7 +4,7 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    display: inline-block;
+    display: inline-block;  /* TODO: use flex-wrap */
     overflow: hidden;
 }
 

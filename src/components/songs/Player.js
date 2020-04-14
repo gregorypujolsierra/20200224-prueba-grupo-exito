@@ -9,7 +9,7 @@ export default class Player extends Component {
         super(props);
 
         this.state = {
-            selected_song: [],
+            songToPlay: null,
             isPlaying: false,
             loop: false,
         }
@@ -21,8 +21,8 @@ export default class Player extends Component {
     }
 
     render() {
-        const {selected_song} = this.props;
-        let duration = formatDuration(this.props.song_duration_ms);
+        let {songToPlay} = this.props;
+        let duration = formatDuration(songToPlay.duration_ms);
         return (
             <div className={'player-main-frame'}>
                 <div className={'player-controls-info-group'}>
@@ -33,7 +33,7 @@ export default class Player extends Component {
                         <audio
                             controls
                             autoPlay
-                            src={selected_song}
+                            src={songToPlay.preview_url}
                             typeof={"audio/mpeg"}
                             className={'song-player'}
                         />
@@ -50,7 +50,7 @@ export default class Player extends Component {
                             />
                         </div>
                         <p>
-                            {this.props.song_name}
+                            {songToPlay.name}
                             <br/><small>Duración: {duration}</small>
                         </p>
                     </div>
