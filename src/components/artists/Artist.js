@@ -2,12 +2,9 @@ import React, {Component} from "react";
 
 import '../../styles/artist.css';
 import FitImage from "../../libraries/FitImage";
+import { Link } from "react-router-dom";
 
 export default class Artist extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className={'artist-container'}>
@@ -18,7 +15,7 @@ export default class Artist extends Component {
                 />
                 <div className={'artist-name'}>
                     <p>{this.props.artist.name}</p>
-                    <a href={"#artist"} className={'link-to-artist'}/>
+                    <Link to={`/artists/${this.props.artist.id}/albums`} className={'link-to-artist'}/>
                 </div>
             </div>
         )

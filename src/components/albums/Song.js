@@ -4,10 +4,6 @@ import '../../styles/song.css';
 import { formatDuration } from "../../libraries/utilities";
 
 export default class Song extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let duration = formatDuration(this.props.song.duration_ms);
         return (

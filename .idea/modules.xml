@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../test-react-grupo-exito/.idea/test-react-grupo-exito.iml" filepath="$PROJECT_DIR$/../test-react-grupo-exito/.idea/test-react-grupo-exito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-music-player-web-app/.idea/react-music-player-web-app.iml" filepath="$PROJECT_DIR$/../react-music-player-web-app/.idea/react-music-player-web-app.iml" />
     </modules>
   </component>
 </project>
